@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        
+        .curve-container {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .curve-container p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .emoji {
+            font-size: 2em;
+            margin-top: -10px; /* Adjust margin-top to align emoji properly */
+        }
+
+        .yellow-text {
+            color: goldenrod;
+        }
+
+        .light-text {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Button styles */
+        .button-container {
+            margin-top: 20px;
+        }
+
+        /* Button styles */
+.button-container {
+    margin-top: 20px;
+}
+
+.button {
+    display: block; /* Display buttons as block elements to stack them vertically */
+    padding: 10px 0; /* Adjust padding for better spacing */
+    background-color: black; /* Black background color */
+    color: white; /* White text color */
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px auto; /* Center buttons horizontally */
+    width: 150px; /* Adjust button width as needed */
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.button:hover {
+    background-color: goldenrod; /* Change color on hover (blue in this case) */
+}
+
+/* Add these styles to your existing CSS or in a separate stylesheet */
+
+/* Add these styles to your existing CSS or in a separate stylesheet */
+
+#about-me {
+    background-color: #222; /* Background color for the section */
+    padding: 40px 0; /* Add padding for spacing */
+    text-align: center;
+    border-radius: 20px; /* Add border radius for curvy appearance */
+}
+
+#about-me h2 {
+    color: white; /* Heading text color */
+    font-size: 24px; /* Adjust the font size as needed */
+    font-family: 'Your Professional Font', sans-serif; /* Replace with your desired professional font */
+}
+
+.subheading {
+    color: goldenrod; /* Yellow text color for the subheading */
+    font-size: 18px; /* Adjust the font size as needed */
+    margin-top: 10px; /* Add space between heading and subheading */
+}
+
+.about-text {
+    color: white; /* Light white text color for the about me text */
+    font-size: 16px; /* Adjust the font size as needed */
+    margin-top: 20px; /* Add space between subheading and text */
+    line-height: 1.5; /* Adjust line height for readability */
+}
+
+.buttons {
+    margin-top: 20px; /* Add space between text and buttons */
+}
+
+.button {
+    display: block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px auto;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Your Professional Font', sans-serif; /* Replace with your desired professional font */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+    background-color: goldenrod; /* Golden yellow on hover */
+    color: black; /* Text color on hover */
+}
+body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            
+        }
+
+        .container {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .profile-pic {
+            width: 200px; /* Adjust the size as needed */
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+
+        .profile-heading {
+            font-size: 24px;
+            margin-top: 20px;
+            color:goldenrod; /* Yellow text color */
+        }
+
+        .section-heading {
+            font-size: 24px;
+            color: white; /* White text color */
+            margin-top: 20px;
+            opacity: 0.5;
+        }
+
+        .section-symbol {
+            font-size: 36px;
+            color: goldenrod; /* Yellow text color for symbols */
+        }
+
+        .section-description {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        /* Container for the centered section with margin-top */
+        .centered-section-container {
+            margin-top: 40px; /* Adjust the margin as needed */
+        }
+        /* Default styles for larger screens */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Styles for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+    /* Adjust the styles for smaller screens here */
+    .curve-container {
+        padding: 10px;
+    }
+
+    .profile-pic {
+        width: 150px;
+    }
+
+    /* Add more responsive styles as needed */
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="curve-container">
+        <img src="static/img/profo.jpg" alt="Profile Photo" class="profile-pic">
+        <p>Hi<span class="emoji">👋</span>I am Samay Topre</p>
+        <p class="yellow-text">CSE Undergrad | Competitive Programmer</p>
+        <p  style="letter-spacing: 2px; opacity: 0.6;" class="light-text">As a passionate problem solver with in-depth knowledge of data structures and algorithms, I'm always seeking opportunities to apply my skills to real-world challenges.</p>
+        
+        <!-- Button Container -->
+        <div class="button-container">
+            <!-- Coding Profile Button -->
+            <a href="/profile" class="button" target="_blank">Coding Profile</a>
+            
+            <!-- LinkedIn Profile Button -->
+            <a href="https://www.linkedin.com/in/samay-topre-66a29a213" class="button" target="_blank">LinkedIn Profile</a>
+        </div>
+    </div>
+
+    <section id="about-me">
+        <div class="container">
+            <h2>About Me</h2>
+            <p class="subheading">CSE | Undergrad | Web Developer | Competitive Programmer</p>
+            <p class="about-text">
+                <p>Hi<span class="emoji">👋</span>I am Samay Topre</p>
+                <p style="letter-spacing: 2px; opacity: 0.6;" class="light-text">I am an undergraduate student at Yeshwantrao Chavan College of Engineering. As a passionate problem solver with in-depth knowledge of data structures and algorithms, I'm always seeking opportunities to apply my skills to real-world challenges. I'm proficient in C++ and have a good understanding of Java, Python, and frameworks like Bootstrap and Django. Currently, I'm focusing on mastering full-stack web development and also improving my competitive coding</p>
+            </p>
+            <div class="buttons">
+                <div class="buttons">
+                    <a href="/certificates" class="button">Experience And Credentials</a>
+                    <a href=""C:\Users\samay\OneDrive\Documents\SAMAY_TOPRE_RESUME[1].pdf"" download="YourResume.pdf" class="button">Download My Resume</a>
+
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+    
+    <div class="centered-section-container">
+        <div class="container">
+            <!-- Profile Photo -->
+            <img src="/static/./img/profo.jpg" alt="Profile Photo" class="profile-pic">
+            
+            <!-- Profile Heading -->
+            <h1 class="profile-heading">What I Am Doing</h1>
+
+            <!-- DSA Section -->
+            <div class="section-container">
+                <p class="section-symbol">📚</p>
+                <h2 class="section-heading" style="opacity: 0.9;">DSA</h2>
+               
+                <p class="section-description" style=" text-align: center; opacity: 0.6;">Solving Complex Data Structure and Algorithm problems.Solving problem on leetcode,gfg,codechef.</p>
+            </div>
+
+            
+
+            <!-- Web Development Section -->
+            <div class="section-container">
+                <p class="section-symbol">💻</p>
+                <h2 class="section-heading"  style="opacity: 0.9;">Web Development</h2>
+                
+                <p class="section-description" style=" opacity: 0.6; text-align: center;">Learning and implementing new technologies in web development</p>
+            </div>
+
+            <div class="section-container">
+                <p class="section-symbol">🌐</p>
+                <h2 class="section-heading" style="opacity: 0.9;">Exploring</h2>
+               
+                <p class="section-description" style=" text-align: center; opacity: 0.6;">"As a computer science enthusiast, I thrive on exploring the uncharted realms of technology to uncover innovative solutions ."
+                </p>
+            </div>
+
+            
+            
+            <div class="button-container">
+                <a href="/contact" target="_blank" class="button">Contact Me</a>
+                <a href="#about-me" class="button">About</a>
+                <a href=""C:\Users\samay\OneDrive\Documents\SAMAY_TOPRE_RESUME[1].pdf"" download="YourResume.pdf" class="button">Resume</a>
+
+                <a href="/certificates"  target="_blank" class="button">Certifications</a>
+            </div>
+
+            <!-- Add more sections as needed -->
+        </div>
+    </div>
+
+</body>
+</html>

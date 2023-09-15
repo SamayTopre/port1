@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Contact Form</title>
+  <style>
+    body,
+    form {
+      margin: 0;
+      padding: 0;
+    }
+
+    form {
+      padding: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #888888;
+    }
+
+    label,
+    input,
+    select,
+    textarea {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      width: auto;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    .content-below-navbar {
+      padding-top: 70px;
+    }
+
+    body {
+      background-color: #E5E5E5;
+    }
+
+    @media screen and (max-width: 768px) {
+      form {
+        padding: 10px;
+      }
+
+      input[type="submit"] {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div style="padding-top: 100px;" class="content-below-navbar">
+    <form method="post">
+      {% csrf_token %}
+
+      <div class="row">
+        <div class="col-12">
+          <div> <label for="name">Name:</label>
+            <input class="form-control" type="text" id="name" name="name" required>
+          </div>
+
+          <div>
+            <label for="phone">Phone No.</label>
+            <input class="form-control" type="tel" id="phone" name="phone" pattern="[0-9]{10}" required
+              title="Please enter a 10-digit phone number without spaces (e.g., 8010297771)">
+          </div>
+
+          <div>
+            <label for="email">Email-Id</label>
+            <input class="form-control" type="email" placeholder="enter your email-id here" name="mail" id="">
+          </div>
+
+          <div style="padding-top: 10px;"> <input class="form-control" type="submit" value="Submit"></div>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
